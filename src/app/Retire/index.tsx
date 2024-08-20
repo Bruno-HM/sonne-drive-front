@@ -1,17 +1,17 @@
-import { View, Text, ScrollView, Pressable, TextInput, Image } from "react-native";
+import { View, Text, ScrollView, Pressable, TextInput, Image, ImageBackground } from "react-native";
 import { StyleSheet } from "react-native";
 import { Link } from "expo-router";
 
 export default function Retire() {
  return (
    <View style={styles.container}>
-      
+      <ImageBackground style={styles.backImage} source={require('../../../assets/images/logo.png')}></ImageBackground>
       <View style={styles.header}>
       
         <Text>      </Text>
         <Text style={styles.retireTitle}>Retirar</Text>
 
-        <Link href={'/menu'} asChild>
+        <Link href={'/Menu'} asChild>
           <Pressable>
             <Text style={styles.retireBackText}>Voltar</Text>
           </Pressable>
@@ -34,7 +34,7 @@ export default function Retire() {
             </View>
             <Text style={styles.carStatus}>{`{carStatus}`}</Text>
 
-            <Link style={styles.retireButton}  href={'/Retire/stepOne'} asChild>
+            <Link style={styles.retireButton}  href={'/Retire/RetireConf'} asChild>
                 <Pressable >
                     <Text style={styles.retireButtonText}>Retirar</Text>
                 </Pressable>
@@ -56,10 +56,20 @@ const styles = StyleSheet.create({
 
     container: {
       flex: 1,
-      
+      zIndex: 1,
       borderColor: 'red',
       borderWidth: 2,
       padding: 10,
+    },
+
+    backImage: {
+      position: 'absolute',
+      left: 160,
+      top: 10,
+      width: 500,
+      height: 300,
+      resizeMode: 'cover',
+      opacity: 0.1
     },
 
     header: {

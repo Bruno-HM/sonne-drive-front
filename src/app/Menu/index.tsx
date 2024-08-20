@@ -17,19 +17,19 @@ export default function Menu() {
 
         <View style={styles.buttons}>
             
-            <Link style={styles.retireButton}  href={'/retire'} asChild>
+            <Link style={styles.retireButton}  href={'/Retire'} asChild>
                 <Pressable >
                     <Text style={styles.retireText}>Retirar</Text>
                 </Pressable>
             </Link>
 
-            <Link  style={styles.returnButton}  href={'/refund'} asChild>
+            <Link  style={styles.returnButton}  href={'/Refund'} asChild>
                 <Pressable>
                     <Text style={styles.returnText}>Devolver</Text>
                 </Pressable>
             </Link>
 
-            <Link style={styles.historyButton} href={'/history'} asChild>
+            <Link style={styles.historyButton} href={'/History'} asChild>
                 <Pressable >
                     <Text style={styles.historyText}>Histórico</Text>
                 </Pressable>

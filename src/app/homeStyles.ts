@@ -58,11 +58,13 @@ export const styles = StyleSheet.create({
       paddingTop: 14,
       paddingBottom: 14,
       borderRadius: 34,
+      cursor: 'pointer'
     },
   
     loginText: {
       fontSize: 30,
       color:'white',
+      cursor: 'pointer'
     },
   
     baseTitle: {

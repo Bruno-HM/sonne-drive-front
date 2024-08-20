@@ -25,8 +25,8 @@ export default function Home() {
         </Pressable>
         
       </View>
-      <Link href={'/menu'} asChild>
-        <Pressable style={styles.loginButton}>
+      <Link style={styles.loginButton} href={'/Menu'} asChild>
+        <Pressable >
             <Text  style={styles.loginText}>Log in</Text>
         </Pressable>
       </Link>
