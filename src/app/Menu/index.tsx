@@ -18,7 +18,7 @@ export default function Menu() {
         <View style={styles.buttons}>
             
             <Link style={styles.retireButton}  href={'/Retire'} asChild>
-                <Pressable >
+                <Pressable>
                     <Text style={styles.retireText}>Retirar</Text>
                 </Pressable>
             </Link>

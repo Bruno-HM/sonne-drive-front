@@ -70,6 +70,7 @@ export const styles = StyleSheet.create({
     baseTitle: {
       fontSize: 56,
       color: '#0082C6',
+      fontWeight: '600',
     },
   
     innerTitle: {

@@ -8,7 +8,6 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         borderWidth: 2,
-        borderColor: 'red',
         maxWidth: '100%',
     },
 
@@ -19,6 +18,7 @@ export const styles = StyleSheet.create({
     welcomeText: {
         fontSize: 40,
         textAlign: 'center',
+        fontWeight: '600',
     },
     logo: {
         margin: 20,

@@ -30,9 +30,12 @@
       [
         "expo-font",
         {
-          "fonts": ["./assets/fonts/Inter-Black.otf"]
+          "fonts": [
+            "./assets/fonts/Inter-Black.otf"
+          ]
         }
-      ]
+      ],
+      "expo-router"
     ],
     "experiments": {
       "typedRoutes": true
