@@ -22,7 +22,7 @@ export default function RetireKmConf() {
          </Pressable>
        </Link>
  
-       <Link style={styles.confirmButton} href={'/Refund'} asChild >
+       <Link style={styles.confirmButton} href={'/Refund/RefundForm'} asChild >
          <Pressable>
            <Text style={styles.confirmButtonText}>Confirmar</Text>
          </Pressable>
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   retireBackText: {
     color: '#0082C6'
   },
-
+ 
   Title: {
     fontSize: 38,
     textAlign: 'center',
@@ -67,8 +67,6 @@ const styles = StyleSheet.create({
   carImage: {
     width: 230,
     height: 130,
-    borderColor: 'red',
-    borderWidth: 2,
     alignSelf: 'center',
   },
 
