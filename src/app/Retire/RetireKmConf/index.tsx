@@ -99,8 +99,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     padding: 20,
-    borderColor: 'red',
-    borderWidth: 2,
 
   },
 
