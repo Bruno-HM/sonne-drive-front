@@ -1,5 +1,5 @@
 import { Link } from 'expo-router';
-import { View, Text, Pressable, Image } from 'react-native';
+import { View, Text, Pressable, Image, TouchableOpacity } from 'react-native';
 import { StyleSheet } from "react-native";
 
 
@@ -17,15 +17,15 @@ export default function RetireKmConf() {
      <View style={styles.buttons}>
  
        <Link style={styles.cancellButton} href={'/Refund'} asChild>
-         <Pressable>
+         <TouchableOpacity>
            <Text style={styles.cancellButtonText}>Cancelar</Text>
-         </Pressable>
+         </TouchableOpacity>
        </Link>
  
        <Link style={styles.confirmButton} href={'/Refund/RefundForm'} asChild >
-         <Pressable>
+         <TouchableOpacity>
            <Text style={styles.confirmButtonText}>Confirmar</Text>
-         </Pressable>
+         </TouchableOpacity>
        </Link>
  
      </View>

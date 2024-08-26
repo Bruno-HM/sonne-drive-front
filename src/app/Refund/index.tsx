@@ -1,4 +1,4 @@
-import { View, Text, Pressable, Image } from "react-native";
+import { View, Text, Pressable, Image, TouchableOpacity } from "react-native";
 import { StyleSheet } from "react-native";
 import { Link } from "expo-router";
 
@@ -28,9 +28,9 @@ export default function Refund() {
         <Text style={styles.plateText}>Placa: <Text>{`{plate}`}</Text></Text>
         <Text style={styles.rentText}>Alugado: <Text>{`{rentDate}`}</Text></Text>
         <Link style={styles.refundButton} href={'/Refund/RefundConf'} asChild>
-          <Pressable>
+          <TouchableOpacity>
             <Text style={styles.refundButtonText}>Devolver</Text>
-          </Pressable>
+          </TouchableOpacity>
         </Link>
       </View>
 

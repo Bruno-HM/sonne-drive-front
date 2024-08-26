@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, Pressable, TextInput, Image, ImageBackground } from "react-native";
+import { View, Text, ScrollView, Pressable, TextInput, Image, ImageBackground, TouchableOpacity } from "react-native";
 import { StyleSheet } from "react-native";
 import { Link } from "expo-router";
 
@@ -35,9 +35,9 @@ export default function Retire() {
             <Text style={styles.carStatus}>{`{carStatus}`}</Text>
 
             <Link style={styles.retireButton}  href={'/Retire/RetireConf'} asChild>
-                <Pressable >
+                <TouchableOpacity >
                     <Text style={styles.retireButtonText}>Retirar</Text>
-                </Pressable>
+                </TouchableOpacity>
             </Link>
 
           </View>

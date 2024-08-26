@@ -1,4 +1,4 @@
-import { View, Text, Pressable, Image} from "react-native";
+import { View, Text, Pressable, Image, TouchableOpacity} from "react-native";
 import { Link } from "expo-router";
 
 
@@ -25,15 +25,15 @@ export default function RetireConf() {
     <View style={styles.buttons}>
 
       <Link style={styles.cancellButton} href={'/Retire'} asChild>
-        <Pressable>
+        <TouchableOpacity>
           <Text style={styles.cancellButtonText}>Cancelar</Text>
-        </Pressable>
+        </TouchableOpacity>
       </Link>
 
       <Link style={styles.confirmButton} href={'/Retire/RetireKmConf'} asChild >
-        <Pressable>
+        <TouchableOpacity>
           <Text style={styles.confirmButtonText}>Confirmar</Text>
-        </Pressable>
+        </TouchableOpacity>
       </Link>
 
     </View>

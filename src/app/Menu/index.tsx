@@ -1,4 +1,4 @@
-import { View, Text, Image, Pressable } from 'react-native'
+import { View, Text, Image, Pressable, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { Link } from 'expo-router'
 
@@ -18,21 +18,21 @@ export default function Menu() {
         <View style={styles.buttons}>
             
             <Link style={styles.retireButton}  href={'/Retire'} asChild>
-                <Pressable>
+                <TouchableOpacity>
                     <Text style={styles.retireText}>Retirar</Text>
-                </Pressable>
+                </TouchableOpacity>
             </Link>
 
             <Link  style={styles.returnButton}  href={'/Refund'} asChild>
-                <Pressable>
+                <TouchableOpacity>
                     <Text style={styles.returnText}>Devolver</Text>
-                </Pressable>
+                </TouchableOpacity>
             </Link>
 
             <Link style={styles.historyButton} href={'/History'} asChild>
-                <Pressable >
+                <TouchableOpacity >
                     <Text style={styles.historyText}>Histórico</Text>
-                </Pressable>
+                </TouchableOpacity>
             </Link>
 
 

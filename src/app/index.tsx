@@ -1,4 +1,4 @@
-import { Text, View, Pressable, Image, TextInput, Button  } from "react-native";
+import { Text, View, Pressable, Image, TextInput, Button, TouchableOpacity  } from "react-native";
 import { Link } from "expo-router"
 import { useFonts} from "expo-font"
 
@@ -26,9 +26,9 @@ export default function Home() {
         
       </View>
       <Link style={styles.loginButton} href={'/Menu'} asChild>
-        <Pressable >
+        <TouchableOpacity>
             <Text  style={styles.loginText}>Log in</Text>
-        </Pressable>
+        </TouchableOpacity>
       </Link>
       
     </View>

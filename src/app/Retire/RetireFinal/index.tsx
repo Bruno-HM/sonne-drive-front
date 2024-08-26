@@ -1,4 +1,4 @@
-import { View, Text, Pressable, ImageBackground } from 'react-native';
+import { View, Text, Pressable, ImageBackground, TouchableOpacity } from 'react-native';
 import { Link } from 'expo-router';
 import { StyleSheet } from 'react-native';
 
@@ -8,10 +8,11 @@ export default function RetireFinal() {
    <View style={styles.container}>
     <View style={styles.image}><ImageBackground style={styles.backImage} source={require('../../../../assets/images/logo.png')}></ImageBackground></View>
     <Text style={styles.title}>{`Retirado\ncom`} <Text style={styles.innerTitle}>{`\nSucesso`}</Text></Text>
+    
     <Link style={styles.homeButton}  href={'/Menu'} asChild>
-        <Pressable>
+        <TouchableOpacity>
             <Text style={styles.homeButtonText}>Início</Text>
-        </Pressable>
+        </TouchableOpacity>
     </Link> 
    </View>
   );

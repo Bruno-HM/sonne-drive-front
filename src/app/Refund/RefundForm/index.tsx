@@ -1,4 +1,4 @@
-import { View, Text, Image, Pressable, TextInput } from 'react-native';
+import { View, Text, Image, Pressable, TextInput, TouchableOpacity } from 'react-native';
 import { Link } from 'expo-router';
 import { StyleSheet } from 'react-native';
 
@@ -19,9 +19,9 @@ export default function RefundForm() {
     <Text style={styles.title}>Adicione informações se necessário, (riscos,quebrados)</Text>
     <TextInput multiline  placeholder='Observações' style={styles.cityInput}></TextInput>
     <Link style={styles.continueButton} href={'/Refund/RefundFinal'} asChild>
-        <Pressable>
+        <TouchableOpacity>
           <Text style={styles.continueButtonText}>Continuar</Text>
-        </Pressable>
+        </TouchableOpacity>
       </Link>
    </View>
   );

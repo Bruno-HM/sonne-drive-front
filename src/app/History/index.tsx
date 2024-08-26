@@ -1,4 +1,4 @@
-import { View, Text, Pressable } from "react-native";
+import { View, Text, Pressable, TouchableOpacity } from "react-native";
 import { Link } from "expo-router";
 import { StyleSheet } from "react-native";
 
@@ -10,9 +10,9 @@ export default function History() {
         <Text style={styles.historyTitle}>{`Histórico`}</Text>
 
         <Link href={'/Menu'} asChild>
-          <Pressable>
+          <TouchableOpacity>
             <Text style={styles.historyBackText}>Voltar</Text>
-          </Pressable>
+          </TouchableOpacity>
         </Link>
       </View>
 
